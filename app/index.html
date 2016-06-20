@@ -7,12 +7,10 @@
 	<title>Editable Items</title>
 </head>
 <body>
-	<div ng-init="editable=false" contenteditable="{{editable}}">
-		<p ng-class="{editmode: editable}">
+	<div make-editable>
+		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium urna et ligula rhoncus rhoncus. Sed in volutpat justo. Donec sagittis consectetur magna sed rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vitae sodales lorem. Vestibulum auctor, mi pharetra sollicitudin venenatis, libero lectus volutpat nisl, maximus efficitur quam odio eu nibh. Donec ac rhoncus lorem. Vivamus vel rhoncus nulla, aliquet pellentesque quam. In hac habitasse platea dictumst. Nam vehicula sed velit ac tincidunt. Morbi bibendum cursus erat vel semper. Nam sed eros id leo congue rhoncus. Morbi nibh massa, tempus ac suscipit ut, varius eu elit. Etiam eget nisl nec elit finibus luctus. Ut efficitur ornare blandit.
 		</p>
-		<button ng-click="editable = !editable" ng-show="!editable">Edit</button>
-		<button ng-click="editable = !editable" ng-show="editable">Save</button>
 	</div>
 </body>
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
