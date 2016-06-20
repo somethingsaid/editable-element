@@ -5,6 +5,7 @@ myApp.directive('makeEditable', function() {
         restrict: 'A',
         transclude: true,
         templateUrl: './template.html',
+        replace: true,
         scope: true
     }
 });
