@@ -2,8 +2,9 @@ var myApp = angular.module('myApp', []);
 
 myApp.directive('makeEditable', function() {
     return {
-        restrict: 'E',
+        restrict: 'A',
         transclude: true,
-        replace: true
+        replace: true,
+        scope: true
     }
 });
